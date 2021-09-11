@@ -15,6 +15,7 @@
 		74DE7E2426ED54200024AF6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DE7E2226ED54200024AF6A /* LaunchScreen.storyboard */; };
 		74DE7E2F26ED54200024AF6A /* WKWebViewCookieIntroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DE7E2E26ED54200024AF6A /* WKWebViewCookieIntroTests.swift */; };
 		74DE7E3A26ED54200024AF6A /* WKWebViewCookieIntroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DE7E3926ED54200024AF6A /* WKWebViewCookieIntroUITests.swift */; };
+		74DE7E4926ED55BB0024AF6A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74DE7E4826ED55BA0024AF6A /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		74DE7E3526ED54200024AF6A /* WKWebViewCookieIntroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKWebViewCookieIntroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DE7E3926ED54200024AF6A /* WKWebViewCookieIntroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewCookieIntroUITests.swift; sourceTree = "<group>"; };
 		74DE7E3B26ED54200024AF6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74DE7E4826ED55BA0024AF6A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74DE7E4926ED55BB0024AF6A /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +86,7 @@
 				74DE7E2D26ED54200024AF6A /* WKWebViewCookieIntroTests */,
 				74DE7E3826ED54200024AF6A /* WKWebViewCookieIntroUITests */,
 				74DE7E1526ED541E0024AF6A /* Products */,
+				74DE7E4726ED55BA0024AF6A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +130,14 @@
 				74DE7E3B26ED54200024AF6A /* Info.plist */,
 			);
 			path = WKWebViewCookieIntroUITests;
+			sourceTree = "<group>";
+		};
+		74DE7E4726ED55BA0024AF6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74DE7E4826ED55BA0024AF6A /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

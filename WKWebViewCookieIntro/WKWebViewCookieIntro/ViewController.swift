@@ -6,12 +6,18 @@
 //
 
 import UIKit
+import WebKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var webview: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let url = URL(string:"http://192.168.86.238:8000/hoge")!
+        let req = URLRequest(url: url)
+        webview.load(req)
     }
 
 
