@@ -15,30 +15,9 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLh-6m-XUM">
-                                <rect key="frame" x="60" y="104" width="294" height="200"/>
-                                <color key="backgroundColor" systemColor="systemFillColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="2xP-NF-Pyj"/>
-                                </constraints>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dLh-6m-XUM" secondAttribute="trailing" constant="60" id="SOz-sY-HfZ"/>
-                            <constraint firstItem="dLh-6m-XUM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="Te5-t3-B0B"/>
-                            <constraint firstItem="dLh-6m-XUM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="o8k-Ym-26L"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="webview" destination="dLh-6m-XUM" id="yFo-d0-vCF"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -48,9 +27,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemFillColor">
-            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
