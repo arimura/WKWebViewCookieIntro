@@ -1,0 +1,6 @@
+framework module Pods_WKWebViewCookieIntro {
+  umbrella header "Pods-WKWebViewCookieIntro-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_WKWebViewCookieIntro_WKWebViewCookieIntroUITests : NSObject
+@end
+@implementation PodsDummy_Pods_WKWebViewCookieIntro_WKWebViewCookieIntroUITests
+@end
