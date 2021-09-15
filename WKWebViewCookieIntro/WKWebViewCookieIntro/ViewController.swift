@@ -12,15 +12,21 @@ import SnapKit
 class ViewController: UIViewController {
 
    var webview1: WKWebView!
-   var webview2: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let url = URL(string:"http://192.168.86.238:8000/hoge")!
         let config = WKWebViewConfiguration()
         config.websiteDataStore = WKWebsiteDataStore.nonPersistent()
+        let cookie = HTTPCookie.cookies(withResponseHeaderFields: ["Set-Cookie":"yummy_cookie=choco"], for: url)
+        config.websiteDataStore.httpCookieStore.setCookie(cookie[0]) {
+            //http://192.168.86.238:8000/hoge Set-Cookie: yummy_cookie=choco
+            let url = url
+            let req = URLRequest(url: url)
+            self.webview1.load(req)
+        }
         webview1 = WKWebView(frame: CGRect.zero, configuration: config)
-        webview2 = WKWebView(frame: CGRect.zero, configuration: config)
         
         self.view.addSubview(webview1)
         webview1.snp.makeConstraints { make in
@@ -29,21 +35,8 @@ class ViewController: UIViewController {
             make.centerX.equalTo(self.view)
         }
         
-        self.view.addSubview(webview2)
-        webview2.snp.makeConstraints { make in
-            make.width.height.equalTo(200)
-            make.top.equalTo(webview1.snp.bottom)
-            make.centerX.equalTo(webview1)
-        }
-        
         self.view .addSubview(webview1)
-        
         webview1.navigationDelegate = self
-        
-        //http://192.168.86.238:8000/hoge Set-Cookie: yummy_cookie=choco
-        let url = URL(string:"http://192.168.86.238:8000/hoge")!
-        let req = URLRequest(url: url)
-        webview1.load(req)
     }
 }
 
@@ -55,9 +48,5 @@ extension ViewController : WKNavigationDelegate {
                 print(cookie)
             }
         }
-        //chek request has yummy_cookie=choco on server
-        let url = URL(string:"http://192.168.86.238:8000/fuga")!
-        let req = URLRequest(url: url)
-        webview2.load(req)
     }
 }
