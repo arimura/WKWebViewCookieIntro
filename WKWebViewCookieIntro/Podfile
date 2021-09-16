@@ -7,6 +7,8 @@ target 'WKWebViewCookieIntro' do
 
   # Pods for WKWebViewCookieIntro
   pod 'SnapKit', '~> 5.0.0'
+  pod 'FluctSDK'
+  pod 'FluctSDK-MediationAdapter/AppLovin'
 
   target 'WKWebViewCookieIntroTests' do
     inherit! :search_paths

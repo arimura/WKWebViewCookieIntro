@@ -1,16 +1,29 @@
 PODS:
+  - AppLovinSDK (10.3.5)
+  - FluctSDK (6.13.17)
+  - FluctSDK-MediationAdapter/AppLovin (6.13.17):
+    - AppLovinSDK (>= 10.3.5)
+    - FluctSDK (>= 6.12.4)
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
+  - FluctSDK
+  - FluctSDK-MediationAdapter/AppLovin
   - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
   trunk:
+    - AppLovinSDK
+    - FluctSDK
+    - FluctSDK-MediationAdapter
     - SnapKit
 
 SPEC CHECKSUMS:
+  AppLovinSDK: 3188b9df77128b503cea9822b77e1b4fe7e4761b
+  FluctSDK: b0cf4db2b538c652f0abfef8d17392bbfb4726e8
+  FluctSDK-MediationAdapter: dc3bb3acfe055198be519752abc864b697f67fd1
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 2c06dba3f72acff716aafc54cf6c985dbcc41182
+PODFILE CHECKSUM: e607b1a519604c9175709ef7d1a11b11321358fb
 
 COCOAPODS: 1.10.1

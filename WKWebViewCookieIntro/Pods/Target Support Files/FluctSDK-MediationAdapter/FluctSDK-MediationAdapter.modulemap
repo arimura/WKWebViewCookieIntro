@@ -1,0 +1,6 @@
+framework module FluctSDK_MediationAdapter {
+  umbrella header "FluctSDK-MediationAdapter-umbrella.h"
+
+  export *
+  module * { export * }
+}

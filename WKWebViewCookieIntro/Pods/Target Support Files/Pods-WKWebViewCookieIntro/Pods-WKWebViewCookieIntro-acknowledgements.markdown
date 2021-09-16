@@ -1,6 +1,23 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## AppLovinSDK
+
+
+Copyright 2021 AppLovin Corp. All rights reserved.
+
+The AppLovin SDK is available under a commercial license (https://www.applovin.com/eula).
+
+
+
+## FluctSDK
+
+Copyright (c) fluct,Inc. All rights reserved.
+
+## FluctSDK-MediationAdapter
+
+Copyright (c) fluct,Inc. All rights reserved.
+
 ## SnapKit
 
 Copyright (c) 2011-Present SnapKit Team - https://github.com/SnapKit

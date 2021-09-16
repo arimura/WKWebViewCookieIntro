@@ -6,73 +6,157 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		34C23AC255336DCB625979B8B246FD76 /* FluctSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B7FF9345FA2AE5C6263DB8CB2AD6FDA0 /* Build configuration list for PBXAggregateTarget "FluctSDK" */;
+			buildPhases = (
+				E333A780F605B3081F8C37E6856DEB77 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = FluctSDK;
+		};
+		5BC46914A3617E8E5EA6E625B5DD1684 /* AppLovinSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1137672E97496FACD0DD9E48E86C50EF /* Build configuration list for PBXAggregateTarget "AppLovinSDK" */;
+			buildPhases = (
+				0767D10B049CB169F35806FA0DC22F33 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = AppLovinSDK;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		01C550A53C9E2047C83F8E85BBB558E6 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A46A8054577838D49C60142EB88B13 /* ConstraintLayoutSupportDSL.swift */; };
-		039EAFE7935113805F3FC21BF1B7C9D5 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C5B72775F6AF0891BF331F32FE10D /* LayoutConstraint.swift */; };
+		01C550A53C9E2047C83F8E85BBB558E6 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B3516E1BE41C19DF1743C5ECBE2F3 /* ConstraintLayoutSupportDSL.swift */; };
+		039EAFE7935113805F3FC21BF1B7C9D5 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DF6E5F16C3C1944F5C2FEFAA26647F /* LayoutConstraint.swift */; };
+		08B2ABFCAD058840830F821E6C947274 /* Pods-WKWebViewCookieIntro-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DCA0DCB9390F35746C7A5083143D3C /* Pods-WKWebViewCookieIntro-dummy.m */; };
+		1645D7794B91C73C856C06CD8DBFB24E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		18C1010D08D6BC45A375DC54A701AA9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		1956E392D500F3CD899D39A5F805736D /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E066869A95E00B949CBA4D2284C35F /* Typealiases.swift */; };
-		1AFB1E9136716C0B61D6C700FF1E60FD /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF299D2EEB87E7DD02630E87B96224 /* ConstraintLayoutGuide+Extensions.swift */; };
-		1BF5D36F26904BC2B5C35C321BFCD781 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		21AB1101BBE4D28D74ED4EDF0D59025A /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549471CD1FE3A1E1865DD172864918D3 /* ConstraintInsets.swift */; };
-		232B2F922E972D9F43D2EE15ACECE734 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BD95F32F2E57D6B9100B77B93F013C /* ConstraintPriority.swift */; };
-		23CE82C70949FCE7274AEE381CCDC7EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		2A1BBBC87AC2367BD14610A9D10D285E /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F460233F2A555D41511B6CCA66A124 /* ConstraintAttributes.swift */; };
-		2C06F2E972444D359754D21AC46BFFE2 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2EC377264B25FB0E67D150E37E87CD /* ConstraintInsetTarget.swift */; };
-		3BFC243AB9BD579969F0D5756560BCAA /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50380F281EC3EE769C85035CCEA77226 /* Constraint.swift */; };
-		3E5285F4F36EAD77ECABBFB7F36BB1BB /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9055CEA7890517265589BD23D73A49 /* ConstraintView+Extensions.swift */; };
-		478A9222F7DB05743FF612C60FED8048 /* Pods-WKWebViewCookieIntroTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56B9CA82F53C82DD529AAC331279CD7E /* Pods-WKWebViewCookieIntroTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C7A676DAE95EEAC3787A75349F0862D /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E13B89FFD81AACB7530769CA05EEA26B /* SnapKit-dummy.m */; };
-		51CD5887014967E77E58F5A163996454 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141BC33167429B9926FB24A17F01568C /* ConstraintMaker.swift */; };
-		57B1876F2BE4168E5BFDB63D8CC849A0 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D705690D879064ED84970813189D8D4 /* ConstraintLayoutSupport.swift */; };
-		5854DF509E8A016B6235793D04083035 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D990E0FED5B41C1F13AC6B08208A99B /* ConstraintConstantTarget.swift */; };
-		69CCBEEDFCA6D743D80026568D961919 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F10DE451FED17810D9B5C237324A5 /* ConstraintMakerExtendable.swift */; };
-		69E3A06BBDFDC7D06A9D4BDC4E895E73 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2975CA5A0D26BC84F3EE9912FEBDA795 /* ConstraintRelatableTarget.swift */; };
-		6E0EB9E7FAAEDBB7A73ECF3095F69C4A /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9341666EAC154422A032092A7DC2D7 /* UILayoutSupport+Extensions.swift */; };
-		71B48A8D14A15447A4E86FC710DA6B45 /* Pods-WKWebViewCookieIntro-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD5D41B1F55BC925AE8E2E67832F010 /* Pods-WKWebViewCookieIntro-dummy.m */; };
-		71DE9DC2FA583526AB4D1FD7F00C099C /* ConstraintDirectionalInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D358AA1606C7B2CDC8555485807E9E /* ConstraintDirectionalInsetTarget.swift */; };
-		7273D23AF303DD8A3E8F134601A9E719 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9001F0FC1AD43C57DF9C0AC9E41D313 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-dummy.m */; };
-		75E146C12D1287228A0B493E87CDE31F /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724FB64349F5678CE1709979CF0DD952 /* ConstraintMakerRelatable.swift */; };
-		77C9889055A3B32EA13A9616824DB0ED /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0BE9F3D55FDB29EF516F6D6B1B6BCA /* ConstraintLayoutGuideDSL.swift */; };
+		1956E392D500F3CD899D39A5F805736D /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCA32EA387EB4DAB6A25231FC044B3E /* Typealiases.swift */; };
+		1AFB1E9136716C0B61D6C700FF1E60FD /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF1145DEAF2647D806511D59EE4FCF /* ConstraintLayoutGuide+Extensions.swift */; };
+		21AB1101BBE4D28D74ED4EDF0D59025A /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE440315B6E00A768BEC06C9C0D75F9D /* ConstraintInsets.swift */; };
+		232B2F922E972D9F43D2EE15ACECE734 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D77F22F09ED72E0366A50D1F342882 /* ConstraintPriority.swift */; };
+		2A1BBBC87AC2367BD14610A9D10D285E /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A182FCB7513F77819713EAD9E64B56EB /* ConstraintAttributes.swift */; };
+		2AFE9A36DEA585A8F9FD350367F17D56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2C06F2E972444D359754D21AC46BFFE2 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACFB8909818B03E61B3FD9C63677607 /* ConstraintInsetTarget.swift */; };
+		3BFC243AB9BD579969F0D5756560BCAA /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FD72CDFA960DA0485190749A2C5BE /* Constraint.swift */; };
+		3E5285F4F36EAD77ECABBFB7F36BB1BB /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57622ACCA28925A43EDF883602CF3E65 /* ConstraintView+Extensions.swift */; };
+		478A9222F7DB05743FF612C60FED8048 /* Pods-WKWebViewCookieIntroTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E50D91921D0F7D4F2BFA6A36D4D754DF /* Pods-WKWebViewCookieIntroTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C7A676DAE95EEAC3787A75349F0862D /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E30B36B029751DECA885E427B28DE47A /* SnapKit-dummy.m */; };
+		51CD5887014967E77E58F5A163996454 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426E3295939CBE818B90C59562CD08A3 /* ConstraintMaker.swift */; };
+		57B1876F2BE4168E5BFDB63D8CC849A0 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A25964125358D372AE091ED5FE958E /* ConstraintLayoutSupport.swift */; };
+		5854DF509E8A016B6235793D04083035 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429688880DA27FA69CF5EC737F7E0B8 /* ConstraintConstantTarget.swift */; };
+		69CCBEEDFCA6D743D80026568D961919 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1B336B4F0159DA6E34758C9BCF0F31 /* ConstraintMakerExtendable.swift */; };
+		69E3A06BBDFDC7D06A9D4BDC4E895E73 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004704926227EF220E7EB6E88A9A0C6E /* ConstraintRelatableTarget.swift */; };
+		6E0EB9E7FAAEDBB7A73ECF3095F69C4A /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F7DEE03629F10DF835C59605665204 /* UILayoutSupport+Extensions.swift */; };
+		71DE9DC2FA583526AB4D1FD7F00C099C /* ConstraintDirectionalInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A6361E38006CD68B8D83CCC5A1C30C /* ConstraintDirectionalInsetTarget.swift */; };
+		75E146C12D1287228A0B493E87CDE31F /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4280134F43C8B40EFE190C46785809 /* ConstraintMakerRelatable.swift */; };
+		77C9889055A3B32EA13A9616824DB0ED /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73291F0C82B74F304DFF245B3264CD2 /* ConstraintLayoutGuideDSL.swift */; };
 		7813A09B8F9242BBF63900D45EF15054 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		7C1702076F3A31D8D2D45A4A9F09B266 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3B0B200350EAC8F42EF635FF31BD1 /* ConstraintMakerEditable.swift */; };
-		8277256ADEC3C4DCF79957D1CA681A9A /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE00ECC24C5CC6DC938204FF42AD0E5 /* ConstraintDSL.swift */; };
-		8705BBF0D428BF0AE1B554A377ECC540 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B200BD964F52F6693D4168248B8645 /* ConstraintOffsetTarget.swift */; };
-		99B5296A5EDECE0557B9DA53D9E19CA1 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474AFC560A8B414B467174737DBC891A /* ConstraintItem.swift */; };
-		9B09968922C73D50040C6EEF57890D6E /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250E41DBB680A3A2ECDDD2210311B230 /* ConstraintConfig.swift */; };
-		A270CD9EC3C541FE86E65AEDCEF500CF /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5188AE61F0E667CD9E7ED28CDD61C /* ConstraintLayoutGuide.swift */; };
-		A66ED57B365A35434C5BAF4B990819B7 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0116B84A6773B75FCBFCB479E740F0F3 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC35C9341C4BB156BB26FDD237EE3721 /* ConstraintDirectionalInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91164BE769DA144776663FBF46785561 /* ConstraintDirectionalInsets.swift */; };
-		B599696DFEF6B2A5ECF528F4E5BB1846 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1D9F6F4E2364DFAF158E04AF5D5EAA /* ConstraintDescription.swift */; };
-		B780B272106411CBE258BB60FFC45410 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D038D2FAA2F6B073D1B64B8635F4E3E6 /* Debugging.swift */; };
-		BBAD6889AF3B9C384E73897AE908A5FE /* Pods-WKWebViewCookieIntroTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D591A46F3BEB288535B6447478FF75C8 /* Pods-WKWebViewCookieIntroTests-dummy.m */; };
-		BECA67DFB5E0984DFAEFCB775C31972E /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E99894F75F00A281BE6A32FBDE495 /* ConstraintView.swift */; };
-		C412F27D75AFC0DF0F0289DBB270931C /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D02329E74D733C03BF6BAE1F564481 /* ConstraintMakerFinalizable.swift */; };
-		CE62FEABA57B2B53EABF8C7DCCC6B2C4 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25479F58B67AA43E092C7B156C1B5C1B /* ConstraintRelation.swift */; };
-		D4697DC40F3B059E4A0867838CA1814E /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AB9BB47A2175181386A432C07253AE /* ConstraintMultiplierTarget.swift */; };
-		D97123781767484752A82889FFF82281 /* Pods-WKWebViewCookieIntro-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4D4907C8E9C22D989CE6BB1DCD7CF9 /* Pods-WKWebViewCookieIntro-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E36723BB82540BFD22D24EF4B061F805 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5D9B20F94D2DA83BE387CF2D4619D78 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E8F2429683B3015CBD39CE883770BCA7 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9716AD15FADF38A93170E034F2BCE457 /* ConstraintPriorityTarget.swift */; };
-		E9A970BC24EA15832F248EA020072746 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464C01543F3BCEDEE51ABAA696513D0B /* LayoutConstraintItem.swift */; };
-		EB1726F5E0D0EEBA20E4528B1E37A8FA /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56006AA49A060CA2830F32CD6F394823 /* ConstraintViewDSL.swift */; };
-		EE909C7C786140109051BC9562EEC7C8 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A53CAF547D71AEFABE49D91B4E6816 /* ConstraintMakerPriortizable.swift */; };
+		7C1702076F3A31D8D2D45A4A9F09B266 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD79522F0E2A6EBAF2FF3143ADA00C6 /* ConstraintMakerEditable.swift */; };
+		7E02FC3FAD15896A7A39F92F299412DC /* FSSRewardedVideoCustomEventAppLovin.m in Sources */ = {isa = PBXBuildFile; fileRef = 832A59244CB24B8EAFEDEBD2719C9C04 /* FSSRewardedVideoCustomEventAppLovin.m */; };
+		8277256ADEC3C4DCF79957D1CA681A9A /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77C174BD46BD048DE4F114AECA8FF7A /* ConstraintDSL.swift */; };
+		8705BBF0D428BF0AE1B554A377ECC540 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7875C1CD7D6F0BC271F4C256BB9B24CD /* ConstraintOffsetTarget.swift */; };
+		87C96236E9BB5D9215CB50BEC1CD1D85 /* FluctSDK-MediationAdapter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4357272FC95A3B201FD9D1C147AB69 /* FluctSDK-MediationAdapter-dummy.m */; };
+		89B27432F8B8899371DC7435CF0AC7EE /* FluctSDK-MediationAdapter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 550A0298EE7BEC572E0C0495DA763FED /* FluctSDK-MediationAdapter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99B5296A5EDECE0557B9DA53D9E19CA1 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080DD2E3067D5303B67296982DF796F6 /* ConstraintItem.swift */; };
+		9B09968922C73D50040C6EEF57890D6E /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E391601499627607E5B0158BA7A82BD /* ConstraintConfig.swift */; };
+		9C5F65B4F69DF5E1C494667A9D191979 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A270CD9EC3C541FE86E65AEDCEF500CF /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9769C25C11915BF88A4BD99EBED3B470 /* ConstraintLayoutGuide.swift */; };
+		A66ED57B365A35434C5BAF4B990819B7 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F1ACF3B27950C41A4EB30FAF6761D67 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC35C9341C4BB156BB26FDD237EE3721 /* ConstraintDirectionalInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2726CAFEBBD1D615860015E39CE4AD /* ConstraintDirectionalInsets.swift */; };
+		B599696DFEF6B2A5ECF528F4E5BB1846 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDBC7D9E108FAF5F608175654B5C9CE /* ConstraintDescription.swift */; };
+		B780B272106411CBE258BB60FFC45410 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9BC1750C81AEA3F93BC5A7B1EA5C2D /* Debugging.swift */; };
+		BBAD6889AF3B9C384E73897AE908A5FE /* Pods-WKWebViewCookieIntroTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0253B86CAF8C0598B7318DC849156F37 /* Pods-WKWebViewCookieIntroTests-dummy.m */; };
+		BECA67DFB5E0984DFAEFCB775C31972E /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA595B91B0E8823435C78BD1C6685B5 /* ConstraintView.swift */; };
+		C27920B19A957B4FB6285EF68A6A21D3 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00755AC26216671B3FE3FA40A3D001CA /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C412F27D75AFC0DF0F0289DBB270931C /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AA03CE31C689A20647FE6CE89E25AF /* ConstraintMakerFinalizable.swift */; };
+		CC17AFE6A275BC67FEC0EB7859DFED5E /* FSSRewardedVideoCustomEventAppLovin.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F23B16FB815738049B27F183A7966B6 /* FSSRewardedVideoCustomEventAppLovin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE62FEABA57B2B53EABF8C7DCCC6B2C4 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5471A9EFE75678AC223BE29430207D87 /* ConstraintRelation.swift */; };
+		D4697DC40F3B059E4A0867838CA1814E /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDC8376B4D5314DE699B1574F7CC691 /* ConstraintMultiplierTarget.swift */; };
+		D69A8D316B83B088C46795ABD4DF4334 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D5B0320F249635211996E99B6402F3 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-dummy.m */; };
+		D942EA95FD53E836E01A01F78FE55EB1 /* Pods-WKWebViewCookieIntro-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D7AF0E3CFB599D22FAB30CF6A55AF2B8 /* Pods-WKWebViewCookieIntro-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8F2429683B3015CBD39CE883770BCA7 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD5BF556771010703EEAC9C1ABAEFA3 /* ConstraintPriorityTarget.swift */; };
+		E9A970BC24EA15832F248EA020072746 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C95C5F7EE9C6F393D612D599BAEC932 /* LayoutConstraintItem.swift */; };
+		EB1726F5E0D0EEBA20E4528B1E37A8FA /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C537669A1F3E95C4852A32D09F171 /* ConstraintViewDSL.swift */; };
+		EE909C7C786140109051BC9562EEC7C8 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067A61C52F96B916A175BD8434A8ACD /* ConstraintMakerPriortizable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B01C9A27947C58CBEC080A6EF19934C1 /* PBXContainerItemProxy */ = {
+		083E02894434E5605D9EB96597827462 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 833C0AF0C2A62D034C91CA8DF9E04502;
-			remoteInfo = "Pods-WKWebViewCookieIntro";
+			remoteGlobalIDString = 34C23AC255336DCB625979B8B246FD76;
+			remoteInfo = FluctSDK;
 		};
-		DB7DF4EE0FD37DFEF839F4BA5DCC0EC0 /* PBXContainerItemProxy */ = {
+		46F66140D2BE4275D2528854E9CDA4C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BC46914A3617E8E5EA6E625B5DD1684;
+			remoteInfo = AppLovinSDK;
+		};
+		759844C0E7DA4D1ECA1D5C2CF90C57B8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
 			remoteInfo = SnapKit;
 		};
-		E77880CA5B4E1F4E1677A572FBD44022 /* PBXContainerItemProxy */ = {
+		83AB82C3CBAC3B70CF5C363EDF4B4A9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BC46914A3617E8E5EA6E625B5DD1684;
+			remoteInfo = AppLovinSDK;
+		};
+		91AB998D9D45A30548B29DC4A988B842 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4BBF26D52171D8FE63B2814A384F94D;
+			remoteInfo = "FluctSDK-MediationAdapter";
+		};
+		A9F0807E8E486BB4031B8EE2347D6A91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 833C0AF0C2A62D034C91CA8DF9E04502;
+			remoteInfo = "Pods-WKWebViewCookieIntro";
+		};
+		AB59AF47BB4AA81A12F3FBB17255C25B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34C23AC255336DCB625979B8B246FD76;
+			remoteInfo = FluctSDK;
+		};
+		BD716D48F96FFBDE7ECE52DB5C4640C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BC46914A3617E8E5EA6E625B5DD1684;
+			remoteInfo = AppLovinSDK;
+		};
+		BDCB633FE5747AECD9B6B3292BDBD90C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4BBF26D52171D8FE63B2814A384F94D;
+			remoteInfo = "FluctSDK-MediationAdapter";
+		};
+		CB53FC7331BEB853E97AE1F173FA2993 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34C23AC255336DCB625979B8B246FD76;
+			remoteInfo = FluctSDK;
+		};
+		FEAF6FC9095BE14D6685D05C5B562DB2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -82,97 +166,127 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0116B84A6773B75FCBFCB479E740F0F3 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
-		09BF299D2EEB87E7DD02630E87B96224 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
-		0D4D4907C8E9C22D989CE6BB1DCD7CF9 /* Pods-WKWebViewCookieIntro-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WKWebViewCookieIntro-umbrella.h"; sourceTree = "<group>"; };
-		0FD5D41B1F55BC925AE8E2E67832F010 /* Pods-WKWebViewCookieIntro-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WKWebViewCookieIntro-dummy.m"; sourceTree = "<group>"; };
-		10487E99DF4277B010E3834455BAD216 /* Pods-WKWebViewCookieIntro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WKWebViewCookieIntro.release.xcconfig"; sourceTree = "<group>"; };
-		11D02329E74D733C03BF6BAE1F564481 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
-		13F460233F2A555D41511B6CCA66A124 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
-		141BC33167429B9926FB24A17F01568C /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		0043A463723ECC66BEA3A94424810FB5 /* AppLovinSDKResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = AppLovinSDKResources.bundle; path = "applovin-ios-sdk-10.3.5/AppLovinSDKResources.bundle"; sourceTree = "<group>"; };
+		004704926227EF220E7EB6E88A9A0C6E /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		00755AC26216671B3FE3FA40A3D001CA /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-umbrella.h"; sourceTree = "<group>"; };
+		00CF1145DEAF2647D806511D59EE4FCF /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		0253B86CAF8C0598B7318DC849156F37 /* Pods-WKWebViewCookieIntroTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WKWebViewCookieIntroTests-dummy.m"; sourceTree = "<group>"; };
+		04890A749FE106E12B2F2069811C8F82 /* AppLovinSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppLovinSDK.debug.xcconfig; sourceTree = "<group>"; };
+		080DD2E3067D5303B67296982DF796F6 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		081FBBCD989FA3FD0648058F235BCA83 /* Pods-WKWebViewCookieIntro-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WKWebViewCookieIntro-acknowledgements.markdown"; sourceTree = "<group>"; };
+		08B3D147EE42B1DD93EFC3A54EA7A515 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		0C4280134F43C8B40EFE190C46785809 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		0DDBC7D9E108FAF5F608175654B5C9CE /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
 		1831DC37A9C4B6064E8A7895881E5AE5 /* Pods_WKWebViewCookieIntroTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WKWebViewCookieIntroTests.framework; path = "Pods-WKWebViewCookieIntroTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A1A5225BCC7BB6C67A889CCEFB9FE8A /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-Info.plist"; sourceTree = "<group>"; };
+		1CD95768C61794C7E9265BE692C04863 /* Pods-WKWebViewCookieIntro-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WKWebViewCookieIntro-resources.sh"; sourceTree = "<group>"; };
+		1D0713744269F57FDFC2AE190C306A94 /* Pods-WKWebViewCookieIntro-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WKWebViewCookieIntro-frameworks.sh"; sourceTree = "<group>"; };
 		1D9966479D197FA5FAA1BAFC81CC3A6C /* Pods_WKWebViewCookieIntro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WKWebViewCookieIntro.framework; path = "Pods-WKWebViewCookieIntro.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		250E41DBB680A3A2ECDDD2210311B230 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
-		25479F58B67AA43E092C7B156C1B5C1B /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
-		2975CA5A0D26BC84F3EE9912FEBDA795 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
-		2F448DDD36C9EE83B32921FADECD5627 /* Pods-WKWebViewCookieIntroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WKWebViewCookieIntroTests.debug.xcconfig"; sourceTree = "<group>"; };
-		30B68E36CFBE5BC585102CF39D9CD979 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests.release.xcconfig"; sourceTree = "<group>"; };
-		31E3066899AF3BAADF142C2B79F221B1 /* Pods-WKWebViewCookieIntro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WKWebViewCookieIntro.debug.xcconfig"; sourceTree = "<group>"; };
-		348B130987B4E319DED41083D8140BCE /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		391A6F8B42D2CD885F8F3C4CE6859439 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
-		3D705690D879064ED84970813189D8D4 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
-		3F51B891832E7002A293D6DA4371EC80 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		464C01543F3BCEDEE51ABAA696513D0B /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
-		474AFC560A8B414B467174737DBC891A /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
-		47B200BD964F52F6693D4168248B8645 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
-		488CA9DB2C3575676C7AB4CA7D25592C /* Pods-WKWebViewCookieIntroTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WKWebViewCookieIntroTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		50380F281EC3EE769C85035CCEA77226 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
-		549471CD1FE3A1E1865DD172864918D3 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
-		5592B710F1F55B8DA2E946A2296AF3EE /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests.modulemap"; sourceTree = "<group>"; };
-		56006AA49A060CA2830F32CD6F394823 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
-		56B9CA82F53C82DD529AAC331279CD7E /* Pods-WKWebViewCookieIntroTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WKWebViewCookieIntroTests-umbrella.h"; sourceTree = "<group>"; };
-		58387F4EE175A2364FD4DAC306C5B943 /* Pods-WKWebViewCookieIntro.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WKWebViewCookieIntro.modulemap"; sourceTree = "<group>"; };
-		66C5188AE61F0E667CD9E7ED28CDD61C /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
-		6A9341666EAC154422A032092A7DC2D7 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
-		6D990E0FED5B41C1F13AC6B08208A99B /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
-		724FB64349F5678CE1709979CF0DD952 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		2BDE128F638EFB91EC673FCB39A8E1D2 /* FluctSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FluctSDK.release.xcconfig; sourceTree = "<group>"; };
+		2C11970EE26A07F5519ED9FEE2D75835 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
+		2C9BC1750C81AEA3F93BC5A7B1EA5C2D /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		2E1B336B4F0159DA6E34758C9BCF0F31 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		3113F5E2A4C4D2C40FCE30DC241F12CF /* Pods-WKWebViewCookieIntro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WKWebViewCookieIntro.release.xcconfig"; sourceTree = "<group>"; };
+		37405B2254CF594CB8E196872F13BA77 /* FluctSDK-MediationAdapter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FluctSDK-MediationAdapter-Info.plist"; sourceTree = "<group>"; };
+		377D2DD139A7CBC5AC6CD7DFEA8FDC1F /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests.modulemap"; sourceTree = "<group>"; };
+		3CD5BF556771010703EEAC9C1ABAEFA3 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		3F1ACF3B27950C41A4EB30FAF6761D67 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		426E3295939CBE818B90C59562CD08A3 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		43DF6E5F16C3C1944F5C2FEFAA26647F /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		458C5E43D3FB26063B07E6A3CF721ABD /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests.release.xcconfig"; sourceTree = "<group>"; };
+		45F7DEE03629F10DF835C59605665204 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		4BC35872214070F5C9880A1D61832EA1 /* FluctSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FluctSDK.debug.xcconfig; sourceTree = "<group>"; };
+		4E4357272FC95A3B201FD9D1C147AB69 /* FluctSDK-MediationAdapter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FluctSDK-MediationAdapter-dummy.m"; sourceTree = "<group>"; };
+		51AA03CE31C689A20647FE6CE89E25AF /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		5270BD6398919E03F9D1D7CB72DED0B0 /* FluctSDK-MediationAdapter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FluctSDK-MediationAdapter-prefix.pch"; sourceTree = "<group>"; };
+		5471A9EFE75678AC223BE29430207D87 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		550A0298EE7BEC572E0C0495DA763FED /* FluctSDK-MediationAdapter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FluctSDK-MediationAdapter-umbrella.h"; sourceTree = "<group>"; };
+		5705285CEE0229EE0064873F54B6A3F3 /* AppLovinSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppLovinSDK.xcframework; path = "applovin-ios-sdk-10.3.5/AppLovinSDK.xcframework"; sourceTree = "<group>"; };
+		57622ACCA28925A43EDF883602CF3E65 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		5ACFB8909818B03E61B3FD9C63677607 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		5BBB0763ACB51FB3767AC063F54DF5D6 /* FluctSDK-MediationAdapter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FluctSDK-MediationAdapter.release.xcconfig"; sourceTree = "<group>"; };
+		63437D1B75A288370123A1AD71A9097E /* FluctSDK-MediationAdapter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "FluctSDK-MediationAdapter.modulemap"; sourceTree = "<group>"; };
+		67D8047BE15D6B5BCF660873A0ACD796 /* Pods-WKWebViewCookieIntroTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WKWebViewCookieIntroTests.modulemap"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		742B8868124E615EB00B0DCF1B42B9AA /* Pods-WKWebViewCookieIntro-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WKWebViewCookieIntro-Info.plist"; sourceTree = "<group>"; };
-		780D7B6F726249D7E170FFB00116A1B8 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-frameworks.sh"; sourceTree = "<group>"; };
-		7889131C1139F96BBDA94CEE2E694763 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
-		7AE00ECC24C5CC6DC938204FF42AD0E5 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
-		7C21E0C93A1141A1E2EB51575500E27D /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
-		7C2EC377264B25FB0E67D150E37E87CD /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
-		7D6FBEF310500DF6AB56735C4DD9757F /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-Info.plist"; sourceTree = "<group>"; };
+		7875C1CD7D6F0BC271F4C256BB9B24CD /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		7BA595B91B0E8823435C78BD1C6685B5 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		7BCA32EA387EB4DAB6A25231FC044B3E /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		7C05A45D488A9BB58A77B265128AC51E /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7C33354F540D0BCF7F8FA5810C87351B /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
+		7C95C5F7EE9C6F393D612D599BAEC932 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
 		7DC3E52711927015AF1C57683C4EB1A9 /* Pods_WKWebViewCookieIntro_WKWebViewCookieIntroUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WKWebViewCookieIntro_WKWebViewCookieIntroUITests.framework; path = "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BC1A0BE5C60210EFD1046EAA817D823 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		91164BE769DA144776663FBF46785561 /* ConstraintDirectionalInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsets.swift; path = Source/ConstraintDirectionalInsets.swift; sourceTree = "<group>"; };
-		91A53CAF547D71AEFABE49D91B4E6816 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
-		9716AD15FADF38A93170E034F2BCE457 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		7E391601499627607E5B0158BA7A82BD /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		832A59244CB24B8EAFEDEBD2719C9C04 /* FSSRewardedVideoCustomEventAppLovin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSSRewardedVideoCustomEventAppLovin.m; path = "FluctSDK-MediationAdapter/AppLovin/FSSRewardedVideoCustomEventAppLovin.m"; sourceTree = "<group>"; };
+		8A2835A1EDD2B1A0777001C01CBAC775 /* AppLovinSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AppLovinSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		94D77F22F09ED72E0366A50D1F342882 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		9769C25C11915BF88A4BD99EBED3B470 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
 		979486118B3E90C08386079D57962701 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9978F4E928D2F5B3E5149D64BE7BD9CB /* Pods-WKWebViewCookieIntro-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WKWebViewCookieIntro-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1CD432F32277BB93DEAADA626ECEC5B /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
-		A51E99894F75F00A281BE6A32FBDE495 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
-		A7D358AA1606C7B2CDC8555485807E9E /* ConstraintDirectionalInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsetTarget.swift; path = Source/ConstraintDirectionalInsetTarget.swift; sourceTree = "<group>"; };
-		B9D56B724F685C719402E0949C0DEBBB /* Pods-WKWebViewCookieIntroTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WKWebViewCookieIntroTests.modulemap"; sourceTree = "<group>"; };
-		BE0BE9F3D55FDB29EF516F6D6B1B6BCA /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
-		C4A46A8054577838D49C60142EB88B13 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
-		CAEF5C66CEA7FAB96B630A7BD55E5518 /* Pods-WKWebViewCookieIntro-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WKWebViewCookieIntro-acknowledgements.plist"; sourceTree = "<group>"; };
-		CB1D9F6F4E2364DFAF158E04AF5D5EAA /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
-		D038D2FAA2F6B073D1B64B8635F4E3E6 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
-		D16405EE67486C1C82BA406A756DCB7F /* Pods-WKWebViewCookieIntroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WKWebViewCookieIntroTests.release.xcconfig"; sourceTree = "<group>"; };
-		D4E066869A95E00B949CBA4D2284C35F /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
-		D591A46F3BEB288535B6447478FF75C8 /* Pods-WKWebViewCookieIntroTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WKWebViewCookieIntroTests-dummy.m"; sourceTree = "<group>"; };
-		DCD979E21584A0363C14EC8BB85D43B6 /* Pods-WKWebViewCookieIntro-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WKWebViewCookieIntro-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E13B89FFD81AACB7530769CA05EEA26B /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
-		E14A09DC3AD8CA84464FEC37F0FC99D1 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
-		E299210AC02CFA3DFFC9D65FC10852AB /* Pods-WKWebViewCookieIntroTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WKWebViewCookieIntroTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E2C3B0B200350EAC8F42EF635FF31BD1 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
-		E43F10DE451FED17810D9B5C237324A5 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
-		E9001F0FC1AD43C57DF9C0AC9E41D313 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-dummy.m"; sourceTree = "<group>"; };
-		EE9055CEA7890517265589BD23D73A49 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
-		F0BD95F32F2E57D6B9100B77B93F013C /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
-		F44C5B72775F6AF0891BF331F32FE10D /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
-		F5D9B20F94D2DA83BE387CF2D4619D78 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-umbrella.h"; sourceTree = "<group>"; };
-		F78742E4A7EBC72CC42C207C360C6540 /* Pods-WKWebViewCookieIntro-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WKWebViewCookieIntro-frameworks.sh"; sourceTree = "<group>"; };
-		F7AB9BB47A2175181386A432C07253AE /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
-		F8723AE91B1DC087A459308A37652591 /* Pods-WKWebViewCookieIntroTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WKWebViewCookieIntroTests-Info.plist"; sourceTree = "<group>"; };
+		9E94B8AFD548FF53110DABBBF3DC2230 /* FluctSDK_MediationAdapter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FluctSDK_MediationAdapter.framework; path = "FluctSDK-MediationAdapter.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F23B16FB815738049B27F183A7966B6 /* FSSRewardedVideoCustomEventAppLovin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSSRewardedVideoCustomEventAppLovin.h; path = "FluctSDK-MediationAdapter/AppLovin/FSSRewardedVideoCustomEventAppLovin.h"; sourceTree = "<group>"; };
+		A011FA808FE250D3E19E8214BDF33B2F /* Pods-WKWebViewCookieIntro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WKWebViewCookieIntro.debug.xcconfig"; sourceTree = "<group>"; };
+		A067A61C52F96B916A175BD8434A8ACD /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		A182FCB7513F77819713EAD9E64B56EB /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		A2A6361E38006CD68B8D83CCC5A1C30C /* ConstraintDirectionalInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsetTarget.swift; path = Source/ConstraintDirectionalInsetTarget.swift; sourceTree = "<group>"; };
+		A2B312CE000EC6F50D5ABC19FF14085F /* FluctSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = FluctSDK.xcframework; path = FluctSDK.embeddedframework/FluctSDK.xcframework; sourceTree = "<group>"; };
+		A567515C10BB596F0B5D5AA7FB6BE3CF /* Pods-WKWebViewCookieIntroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WKWebViewCookieIntroTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9D5B0320F249635211996E99B6402F3 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-dummy.m"; sourceTree = "<group>"; };
+		ADC16E271257EC5A958E322A8AA1D4A1 /* Pods-WKWebViewCookieIntroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WKWebViewCookieIntroTests.release.xcconfig"; sourceTree = "<group>"; };
+		AF20429593703DF28D011883CAD29649 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		BDC70946517C06C3775860D99916F396 /* FluctSDKResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = FluctSDKResources.bundle; path = FluctSDK.embeddedframework/Resources/FluctSDKResources.bundle; sourceTree = "<group>"; };
+		BF1AE581101241FE821AF550A7018BA7 /* FluctSDK-MediationAdapter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FluctSDK-MediationAdapter.debug.xcconfig"; sourceTree = "<group>"; };
+		C0EB59FF054E412E3FED46AF2A3E79CD /* AppLovinSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppLovinSDK.release.xcconfig; sourceTree = "<group>"; };
+		C16041F8CB10F75F33A97D1246DD940C /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C26FD72CDFA960DA0485190749A2C5BE /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		C76C537669A1F3E95C4852A32D09F171 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		C77C174BD46BD048DE4F114AECA8FF7A /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		C8A25964125358D372AE091ED5FE958E /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		CBD79522F0E2A6EBAF2FF3143ADA00C6 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		D3ACA382B1D418CB6DB99DD797368505 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D73291F0C82B74F304DFF245B3264CD2 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		D7AF0E3CFB599D22FAB30CF6A55AF2B8 /* Pods-WKWebViewCookieIntro-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WKWebViewCookieIntro-umbrella.h"; sourceTree = "<group>"; };
+		D8552E225DE2921F0E1C42FB910AFF5E /* Pods-WKWebViewCookieIntroTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WKWebViewCookieIntroTests-Info.plist"; sourceTree = "<group>"; };
+		D96B3516E1BE41C19DF1743C5ECBE2F3 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		DA64172BC5D5025770A42BAC5E5F7CC1 /* Pods-WKWebViewCookieIntro-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WKWebViewCookieIntro-Info.plist"; sourceTree = "<group>"; };
+		DFB5DC8E69CD81C04642A09BC8607D61 /* Pods-WKWebViewCookieIntroTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WKWebViewCookieIntroTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E0C76507E72AF9B8F166E773FDDC86E4 /* Pods-WKWebViewCookieIntro.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WKWebViewCookieIntro.modulemap"; sourceTree = "<group>"; };
+		E2DCA0DCB9390F35746C7A5083143D3C /* Pods-WKWebViewCookieIntro-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WKWebViewCookieIntro-dummy.m"; sourceTree = "<group>"; };
+		E30B36B029751DECA885E427B28DE47A /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		E429688880DA27FA69CF5EC737F7E0B8 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		E50D91921D0F7D4F2BFA6A36D4D754DF /* Pods-WKWebViewCookieIntroTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WKWebViewCookieIntroTests-umbrella.h"; sourceTree = "<group>"; };
+		EE2726CAFEBBD1D615860015E39CE4AD /* ConstraintDirectionalInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsets.swift; path = Source/ConstraintDirectionalInsets.swift; sourceTree = "<group>"; };
+		EE440315B6E00A768BEC06C9C0D75F9D /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		EEAD75A9A3367A84870E01809C5F64E5 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-resources.sh"; sourceTree = "<group>"; };
+		EFDC8376B4D5314DE699B1574F7CC691 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		F06EFFCE6287CBA79CC648BBE5953D44 /* Pods-WKWebViewCookieIntroTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WKWebViewCookieIntroTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F30FFF7D43AE36D1EB3074F6900DEA5A /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-frameworks.sh"; sourceTree = "<group>"; };
+		F892462A32E1EF01972B8B2CAF23975A /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
+		FD04CE6BD1C7138C12EBA43EBDD238A3 /* FluctSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "FluctSDK-xcframeworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0D4528F0895CABC978F76810CFB5AA4C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1BF5D36F26904BC2B5C35C321BFCD781 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3C8B1704CC97EF12D3409771318C6433 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7813A09B8F9242BBF63900D45EF15054 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0E2A0DC2FFEA65C7B895F8F75D2145 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1645D7794B91C73C856C06CD8DBFB24E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62EF53BA94F80BAFB681CE2C3F1A4190 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C5F65B4F69DF5E1C494667A9D191979 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,76 +298,72 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D2B78CFB9630745F108B38D59655834E /* Frameworks */ = {
+		D13C84A09D8686FD47D192A9D7444BC9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23CE82C70949FCE7274AEE381CCDC7EE /* Foundation.framework in Frameworks */,
+				2AFE9A36DEA585A8F9FD350367F17D56 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0411AA5F445F89EE1660B3F712E55150 /* Pods-WKWebViewCookieIntroTests */ = {
+		29563A7CD07D02AF9704BE0E87AF1159 /* Pods-WKWebViewCookieIntroTests */ = {
 			isa = PBXGroup;
 			children = (
-				B9D56B724F685C719402E0949C0DEBBB /* Pods-WKWebViewCookieIntroTests.modulemap */,
-				E299210AC02CFA3DFFC9D65FC10852AB /* Pods-WKWebViewCookieIntroTests-acknowledgements.markdown */,
-				488CA9DB2C3575676C7AB4CA7D25592C /* Pods-WKWebViewCookieIntroTests-acknowledgements.plist */,
-				D591A46F3BEB288535B6447478FF75C8 /* Pods-WKWebViewCookieIntroTests-dummy.m */,
-				F8723AE91B1DC087A459308A37652591 /* Pods-WKWebViewCookieIntroTests-Info.plist */,
-				56B9CA82F53C82DD529AAC331279CD7E /* Pods-WKWebViewCookieIntroTests-umbrella.h */,
-				2F448DDD36C9EE83B32921FADECD5627 /* Pods-WKWebViewCookieIntroTests.debug.xcconfig */,
-				D16405EE67486C1C82BA406A756DCB7F /* Pods-WKWebViewCookieIntroTests.release.xcconfig */,
+				67D8047BE15D6B5BCF660873A0ACD796 /* Pods-WKWebViewCookieIntroTests.modulemap */,
+				DFB5DC8E69CD81C04642A09BC8607D61 /* Pods-WKWebViewCookieIntroTests-acknowledgements.markdown */,
+				F06EFFCE6287CBA79CC648BBE5953D44 /* Pods-WKWebViewCookieIntroTests-acknowledgements.plist */,
+				0253B86CAF8C0598B7318DC849156F37 /* Pods-WKWebViewCookieIntroTests-dummy.m */,
+				D8552E225DE2921F0E1C42FB910AFF5E /* Pods-WKWebViewCookieIntroTests-Info.plist */,
+				E50D91921D0F7D4F2BFA6A36D4D754DF /* Pods-WKWebViewCookieIntroTests-umbrella.h */,
+				A567515C10BB596F0B5D5AA7FB6BE3CF /* Pods-WKWebViewCookieIntroTests.debug.xcconfig */,
+				ADC16E271257EC5A958E322A8AA1D4A1 /* Pods-WKWebViewCookieIntroTests.release.xcconfig */,
 			);
 			name = "Pods-WKWebViewCookieIntroTests";
 			path = "Target Support Files/Pods-WKWebViewCookieIntroTests";
 			sourceTree = "<group>";
 		};
-		207823636E1B209B091A8A5DB73B3AB1 /* Products */ = {
+		2C05B9905E131F33DDD5F27441D45203 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0043A463723ECC66BEA3A94424810FB5 /* AppLovinSDKResources.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4D8FD49F6BC8728A768631C9D2A34161 /* FluctSDK-MediationAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				735FD6A9479A779C3A464C17D7F5B204 /* AppLovin */,
+				621C52ABB3B01F80005671146E574755 /* Support Files */,
+			);
+			name = "FluctSDK-MediationAdapter";
+			path = "FluctSDK-MediationAdapter";
+			sourceTree = "<group>";
+		};
+		4FAF20DC6DD08095554D33BCD8D4DA03 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A2835A1EDD2B1A0777001C01CBAC775 /* AppLovinSDK-xcframeworks.sh */,
+				04890A749FE106E12B2F2069811C8F82 /* AppLovinSDK.debug.xcconfig */,
+				C0EB59FF054E412E3FED46AF2A3E79CD /* AppLovinSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AppLovinSDK";
+			sourceTree = "<group>";
+		};
+		50351DD3C54B15AF657E9E3796CCFA0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E94B8AFD548FF53110DABBBF3DC2230 /* FluctSDK_MediationAdapter.framework */,
 				1D9966479D197FA5FAA1BAFC81CC3A6C /* Pods_WKWebViewCookieIntro.framework */,
 				7DC3E52711927015AF1C57683C4EB1A9 /* Pods_WKWebViewCookieIntro_WKWebViewCookieIntroUITests.framework */,
 				1831DC37A9C4B6064E8A7895881E5AE5 /* Pods_WKWebViewCookieIntroTests.framework */,
 				979486118B3E90C08386079D57962701 /* SnapKit.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		4CFDA894C2BE445B8D2D1055BA969EA1 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5592B710F1F55B8DA2E946A2296AF3EE /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests.modulemap */,
-				348B130987B4E319DED41083D8140BCE /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-acknowledgements.markdown */,
-				3F51B891832E7002A293D6DA4371EC80 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-acknowledgements.plist */,
-				E9001F0FC1AD43C57DF9C0AC9E41D313 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-dummy.m */,
-				780D7B6F726249D7E170FFB00116A1B8 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-frameworks.sh */,
-				7D6FBEF310500DF6AB56735C4DD9757F /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-Info.plist */,
-				F5D9B20F94D2DA83BE387CF2D4619D78 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-umbrella.h */,
-				8BC1A0BE5C60210EFD1046EAA817D823 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests.debug.xcconfig */,
-				30B68E36CFBE5BC585102CF39D9CD979 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests.release.xcconfig */,
-			);
-			name = "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests";
-			path = "Target Support Files/Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests";
-			sourceTree = "<group>";
-		};
-		4DD5494BFCB8DE4BE071B23D12FE98EE /* Pods-WKWebViewCookieIntro */ = {
-			isa = PBXGroup;
-			children = (
-				58387F4EE175A2364FD4DAC306C5B943 /* Pods-WKWebViewCookieIntro.modulemap */,
-				DCD979E21584A0363C14EC8BB85D43B6 /* Pods-WKWebViewCookieIntro-acknowledgements.markdown */,
-				CAEF5C66CEA7FAB96B630A7BD55E5518 /* Pods-WKWebViewCookieIntro-acknowledgements.plist */,
-				0FD5D41B1F55BC925AE8E2E67832F010 /* Pods-WKWebViewCookieIntro-dummy.m */,
-				F78742E4A7EBC72CC42C207C360C6540 /* Pods-WKWebViewCookieIntro-frameworks.sh */,
-				742B8868124E615EB00B0DCF1B42B9AA /* Pods-WKWebViewCookieIntro-Info.plist */,
-				0D4D4907C8E9C22D989CE6BB1DCD7CF9 /* Pods-WKWebViewCookieIntro-umbrella.h */,
-				31E3066899AF3BAADF142C2B79F221B1 /* Pods-WKWebViewCookieIntro.debug.xcconfig */,
-				10487E99DF4277B010E3834455BAD216 /* Pods-WKWebViewCookieIntro.release.xcconfig */,
-			);
-			name = "Pods-WKWebViewCookieIntro";
-			path = "Target Support Files/Pods-WKWebViewCookieIntro";
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -264,82 +374,176 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7F02E3862C6E84203E8324D9D0088797 /* SnapKit */ = {
+		62109B1E753BEAD1AA8E245E745CF806 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				50380F281EC3EE769C85035CCEA77226 /* Constraint.swift */,
-				13F460233F2A555D41511B6CCA66A124 /* ConstraintAttributes.swift */,
-				250E41DBB680A3A2ECDDD2210311B230 /* ConstraintConfig.swift */,
-				6D990E0FED5B41C1F13AC6B08208A99B /* ConstraintConstantTarget.swift */,
-				CB1D9F6F4E2364DFAF158E04AF5D5EAA /* ConstraintDescription.swift */,
-				91164BE769DA144776663FBF46785561 /* ConstraintDirectionalInsets.swift */,
-				A7D358AA1606C7B2CDC8555485807E9E /* ConstraintDirectionalInsetTarget.swift */,
-				7AE00ECC24C5CC6DC938204FF42AD0E5 /* ConstraintDSL.swift */,
-				549471CD1FE3A1E1865DD172864918D3 /* ConstraintInsets.swift */,
-				7C2EC377264B25FB0E67D150E37E87CD /* ConstraintInsetTarget.swift */,
-				474AFC560A8B414B467174737DBC891A /* ConstraintItem.swift */,
-				66C5188AE61F0E667CD9E7ED28CDD61C /* ConstraintLayoutGuide.swift */,
-				09BF299D2EEB87E7DD02630E87B96224 /* ConstraintLayoutGuide+Extensions.swift */,
-				BE0BE9F3D55FDB29EF516F6D6B1B6BCA /* ConstraintLayoutGuideDSL.swift */,
-				3D705690D879064ED84970813189D8D4 /* ConstraintLayoutSupport.swift */,
-				C4A46A8054577838D49C60142EB88B13 /* ConstraintLayoutSupportDSL.swift */,
-				141BC33167429B9926FB24A17F01568C /* ConstraintMaker.swift */,
-				E2C3B0B200350EAC8F42EF635FF31BD1 /* ConstraintMakerEditable.swift */,
-				E43F10DE451FED17810D9B5C237324A5 /* ConstraintMakerExtendable.swift */,
-				11D02329E74D733C03BF6BAE1F564481 /* ConstraintMakerFinalizable.swift */,
-				91A53CAF547D71AEFABE49D91B4E6816 /* ConstraintMakerPriortizable.swift */,
-				724FB64349F5678CE1709979CF0DD952 /* ConstraintMakerRelatable.swift */,
-				F7AB9BB47A2175181386A432C07253AE /* ConstraintMultiplierTarget.swift */,
-				47B200BD964F52F6693D4168248B8645 /* ConstraintOffsetTarget.swift */,
-				F0BD95F32F2E57D6B9100B77B93F013C /* ConstraintPriority.swift */,
-				9716AD15FADF38A93170E034F2BCE457 /* ConstraintPriorityTarget.swift */,
-				2975CA5A0D26BC84F3EE9912FEBDA795 /* ConstraintRelatableTarget.swift */,
-				25479F58B67AA43E092C7B156C1B5C1B /* ConstraintRelation.swift */,
-				A51E99894F75F00A281BE6A32FBDE495 /* ConstraintView.swift */,
-				EE9055CEA7890517265589BD23D73A49 /* ConstraintView+Extensions.swift */,
-				56006AA49A060CA2830F32CD6F394823 /* ConstraintViewDSL.swift */,
-				D038D2FAA2F6B073D1B64B8635F4E3E6 /* Debugging.swift */,
-				F44C5B72775F6AF0891BF331F32FE10D /* LayoutConstraint.swift */,
-				464C01543F3BCEDEE51ABAA696513D0B /* LayoutConstraintItem.swift */,
-				D4E066869A95E00B949CBA4D2284C35F /* Typealiases.swift */,
-				6A9341666EAC154422A032092A7DC2D7 /* UILayoutSupport+Extensions.swift */,
-				843EFF0C650682C304D518A9092EE9FD /* Support Files */,
+				EB928A5B07ADD86BBB2B4A0572D9EE6C /* Pods-WKWebViewCookieIntro */,
+				83896C9DC85D4512AF26D7B634F89AF7 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests */,
+				29563A7CD07D02AF9704BE0E87AF1159 /* Pods-WKWebViewCookieIntroTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		621C52ABB3B01F80005671146E574755 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				63437D1B75A288370123A1AD71A9097E /* FluctSDK-MediationAdapter.modulemap */,
+				4E4357272FC95A3B201FD9D1C147AB69 /* FluctSDK-MediationAdapter-dummy.m */,
+				37405B2254CF594CB8E196872F13BA77 /* FluctSDK-MediationAdapter-Info.plist */,
+				5270BD6398919E03F9D1D7CB72DED0B0 /* FluctSDK-MediationAdapter-prefix.pch */,
+				550A0298EE7BEC572E0C0495DA763FED /* FluctSDK-MediationAdapter-umbrella.h */,
+				BF1AE581101241FE821AF550A7018BA7 /* FluctSDK-MediationAdapter.debug.xcconfig */,
+				5BBB0763ACB51FB3767AC063F54DF5D6 /* FluctSDK-MediationAdapter.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FluctSDK-MediationAdapter";
+			sourceTree = "<group>";
+		};
+		735FD6A9479A779C3A464C17D7F5B204 /* AppLovin */ = {
+			isa = PBXGroup;
+			children = (
+				9F23B16FB815738049B27F183A7966B6 /* FSSRewardedVideoCustomEventAppLovin.h */,
+				832A59244CB24B8EAFEDEBD2719C9C04 /* FSSRewardedVideoCustomEventAppLovin.m */,
+			);
+			name = AppLovin;
+			sourceTree = "<group>";
+		};
+		7EEC81F2404433B39D0B6BE4A2F031E7 /* AppLovinSDK */ = {
+			isa = PBXGroup;
+			children = (
+				9911DF23F93501827A0AFE83C90B9BC7 /* Frameworks */,
+				2C05B9905E131F33DDD5F27441D45203 /* Resources */,
+				4FAF20DC6DD08095554D33BCD8D4DA03 /* Support Files */,
+			);
+			name = AppLovinSDK;
+			path = AppLovinSDK;
+			sourceTree = "<group>";
+		};
+		83896C9DC85D4512AF26D7B634F89AF7 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests */ = {
+			isa = PBXGroup;
+			children = (
+				377D2DD139A7CBC5AC6CD7DFEA8FDC1F /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests.modulemap */,
+				D3ACA382B1D418CB6DB99DD797368505 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-acknowledgements.markdown */,
+				7C05A45D488A9BB58A77B265128AC51E /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-acknowledgements.plist */,
+				A9D5B0320F249635211996E99B6402F3 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-dummy.m */,
+				F30FFF7D43AE36D1EB3074F6900DEA5A /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-frameworks.sh */,
+				1A1A5225BCC7BB6C67A889CCEFB9FE8A /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-Info.plist */,
+				EEAD75A9A3367A84870E01809C5F64E5 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-resources.sh */,
+				00755AC26216671B3FE3FA40A3D001CA /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-umbrella.h */,
+				C16041F8CB10F75F33A97D1246DD940C /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests.debug.xcconfig */,
+				458C5E43D3FB26063B07E6A3CF721ABD /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests.release.xcconfig */,
+			);
+			name = "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests";
+			path = "Target Support Files/Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests";
+			sourceTree = "<group>";
+		};
+		8708ACA1D86A6BA2C0B23B88C6162ACD /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				C26FD72CDFA960DA0485190749A2C5BE /* Constraint.swift */,
+				A182FCB7513F77819713EAD9E64B56EB /* ConstraintAttributes.swift */,
+				7E391601499627607E5B0158BA7A82BD /* ConstraintConfig.swift */,
+				E429688880DA27FA69CF5EC737F7E0B8 /* ConstraintConstantTarget.swift */,
+				0DDBC7D9E108FAF5F608175654B5C9CE /* ConstraintDescription.swift */,
+				EE2726CAFEBBD1D615860015E39CE4AD /* ConstraintDirectionalInsets.swift */,
+				A2A6361E38006CD68B8D83CCC5A1C30C /* ConstraintDirectionalInsetTarget.swift */,
+				C77C174BD46BD048DE4F114AECA8FF7A /* ConstraintDSL.swift */,
+				EE440315B6E00A768BEC06C9C0D75F9D /* ConstraintInsets.swift */,
+				5ACFB8909818B03E61B3FD9C63677607 /* ConstraintInsetTarget.swift */,
+				080DD2E3067D5303B67296982DF796F6 /* ConstraintItem.swift */,
+				9769C25C11915BF88A4BD99EBED3B470 /* ConstraintLayoutGuide.swift */,
+				00CF1145DEAF2647D806511D59EE4FCF /* ConstraintLayoutGuide+Extensions.swift */,
+				D73291F0C82B74F304DFF245B3264CD2 /* ConstraintLayoutGuideDSL.swift */,
+				C8A25964125358D372AE091ED5FE958E /* ConstraintLayoutSupport.swift */,
+				D96B3516E1BE41C19DF1743C5ECBE2F3 /* ConstraintLayoutSupportDSL.swift */,
+				426E3295939CBE818B90C59562CD08A3 /* ConstraintMaker.swift */,
+				CBD79522F0E2A6EBAF2FF3143ADA00C6 /* ConstraintMakerEditable.swift */,
+				2E1B336B4F0159DA6E34758C9BCF0F31 /* ConstraintMakerExtendable.swift */,
+				51AA03CE31C689A20647FE6CE89E25AF /* ConstraintMakerFinalizable.swift */,
+				A067A61C52F96B916A175BD8434A8ACD /* ConstraintMakerPriortizable.swift */,
+				0C4280134F43C8B40EFE190C46785809 /* ConstraintMakerRelatable.swift */,
+				EFDC8376B4D5314DE699B1574F7CC691 /* ConstraintMultiplierTarget.swift */,
+				7875C1CD7D6F0BC271F4C256BB9B24CD /* ConstraintOffsetTarget.swift */,
+				94D77F22F09ED72E0366A50D1F342882 /* ConstraintPriority.swift */,
+				3CD5BF556771010703EEAC9C1ABAEFA3 /* ConstraintPriorityTarget.swift */,
+				004704926227EF220E7EB6E88A9A0C6E /* ConstraintRelatableTarget.swift */,
+				5471A9EFE75678AC223BE29430207D87 /* ConstraintRelation.swift */,
+				7BA595B91B0E8823435C78BD1C6685B5 /* ConstraintView.swift */,
+				57622ACCA28925A43EDF883602CF3E65 /* ConstraintView+Extensions.swift */,
+				C76C537669A1F3E95C4852A32D09F171 /* ConstraintViewDSL.swift */,
+				2C9BC1750C81AEA3F93BC5A7B1EA5C2D /* Debugging.swift */,
+				43DF6E5F16C3C1944F5C2FEFAA26647F /* LayoutConstraint.swift */,
+				7C95C5F7EE9C6F393D612D599BAEC932 /* LayoutConstraintItem.swift */,
+				7BCA32EA387EB4DAB6A25231FC044B3E /* Typealiases.swift */,
+				45F7DEE03629F10DF835C59605665204 /* UILayoutSupport+Extensions.swift */,
+				B28D3A2BED50BECA2A5817D1EF7EE5BF /* Support Files */,
 			);
 			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
-		843EFF0C650682C304D518A9092EE9FD /* Support Files */ = {
+		978497BEC2046D9F4FECB142FC3E75ED /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7889131C1139F96BBDA94CEE2E694763 /* SnapKit.modulemap */,
-				E13B89FFD81AACB7530769CA05EEA26B /* SnapKit-dummy.m */,
-				391A6F8B42D2CD885F8F3C4CE6859439 /* SnapKit-Info.plist */,
-				E14A09DC3AD8CA84464FEC37F0FC99D1 /* SnapKit-prefix.pch */,
-				0116B84A6773B75FCBFCB479E740F0F3 /* SnapKit-umbrella.h */,
-				7C21E0C93A1141A1E2EB51575500E27D /* SnapKit.debug.xcconfig */,
-				A1CD432F32277BB93DEAADA626ECEC5B /* SnapKit.release.xcconfig */,
+				FD04CE6BD1C7138C12EBA43EBDD238A3 /* FluctSDK-xcframeworks.sh */,
+				4BC35872214070F5C9880A1D61832EA1 /* FluctSDK.debug.xcconfig */,
+				2BDE128F638EFB91EC673FCB39A8E1D2 /* FluctSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FluctSDK";
+			sourceTree = "<group>";
+		};
+		98B8C7388C4AEE431D1217DCC0BE576D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7EEC81F2404433B39D0B6BE4A2F031E7 /* AppLovinSDK */,
+				C259C1BE1724FAAAE9493D12BCEA2341 /* FluctSDK */,
+				4D8FD49F6BC8728A768631C9D2A34161 /* FluctSDK-MediationAdapter */,
+				8708ACA1D86A6BA2C0B23B88C6162ACD /* SnapKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9911DF23F93501827A0AFE83C90B9BC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5705285CEE0229EE0064873F54B6A3F3 /* AppLovinSDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6398FAF36A564A31EF48A802B80D37D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2B312CE000EC6F50D5ABC19FF14085F /* FluctSDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B28D3A2BED50BECA2A5817D1EF7EE5BF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				08B3D147EE42B1DD93EFC3A54EA7A515 /* SnapKit.modulemap */,
+				E30B36B029751DECA885E427B28DE47A /* SnapKit-dummy.m */,
+				2C11970EE26A07F5519ED9FEE2D75835 /* SnapKit-Info.plist */,
+				AF20429593703DF28D011883CAD29649 /* SnapKit-prefix.pch */,
+				3F1ACF3B27950C41A4EB30FAF6761D67 /* SnapKit-umbrella.h */,
+				7C33354F540D0BCF7F8FA5810C87351B /* SnapKit.debug.xcconfig */,
+				F892462A32E1EF01972B8B2CAF23975A /* SnapKit.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SnapKit";
 			sourceTree = "<group>";
 		};
-		B4A230A2EEB9D19AE71DA304802EDBC9 /* Targets Support Files */ = {
+		C259C1BE1724FAAAE9493D12BCEA2341 /* FluctSDK */ = {
 			isa = PBXGroup;
 			children = (
-				4DD5494BFCB8DE4BE071B23D12FE98EE /* Pods-WKWebViewCookieIntro */,
-				4CFDA894C2BE445B8D2D1055BA969EA1 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests */,
-				0411AA5F445F89EE1660B3F712E55150 /* Pods-WKWebViewCookieIntroTests */,
+				A6398FAF36A564A31EF48A802B80D37D /* Frameworks */,
+				EDBF4B525424C154F940FE1B58F5483A /* Resources */,
+				978497BEC2046D9F4FECB142FC3E75ED /* Support Files */,
 			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		BA22F08D059965C9A09F78196176CEDB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7F02E3862C6E84203E8324D9D0088797 /* SnapKit */,
-			);
-			name = Pods;
+			name = FluctSDK;
+			path = FluctSDK;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -347,9 +551,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				BA22F08D059965C9A09F78196176CEDB /* Pods */,
-				207823636E1B209B091A8A5DB73B3AB1 /* Products */,
-				B4A230A2EEB9D19AE71DA304802EDBC9 /* Targets Support Files */,
+				98B8C7388C4AEE431D1217DCC0BE576D /* Pods */,
+				50351DD3C54B15AF657E9E3796CCFA0D /* Products */,
+				62109B1E753BEAD1AA8E245E745CF806 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -361,17 +565,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EB928A5B07ADD86BBB2B4A0572D9EE6C /* Pods-WKWebViewCookieIntro */ = {
+			isa = PBXGroup;
+			children = (
+				E0C76507E72AF9B8F166E773FDDC86E4 /* Pods-WKWebViewCookieIntro.modulemap */,
+				081FBBCD989FA3FD0648058F235BCA83 /* Pods-WKWebViewCookieIntro-acknowledgements.markdown */,
+				9978F4E928D2F5B3E5149D64BE7BD9CB /* Pods-WKWebViewCookieIntro-acknowledgements.plist */,
+				E2DCA0DCB9390F35746C7A5083143D3C /* Pods-WKWebViewCookieIntro-dummy.m */,
+				1D0713744269F57FDFC2AE190C306A94 /* Pods-WKWebViewCookieIntro-frameworks.sh */,
+				DA64172BC5D5025770A42BAC5E5F7CC1 /* Pods-WKWebViewCookieIntro-Info.plist */,
+				1CD95768C61794C7E9265BE692C04863 /* Pods-WKWebViewCookieIntro-resources.sh */,
+				D7AF0E3CFB599D22FAB30CF6A55AF2B8 /* Pods-WKWebViewCookieIntro-umbrella.h */,
+				A011FA808FE250D3E19E8214BDF33B2F /* Pods-WKWebViewCookieIntro.debug.xcconfig */,
+				3113F5E2A4C4D2C40FCE30DC241F12CF /* Pods-WKWebViewCookieIntro.release.xcconfig */,
+			);
+			name = "Pods-WKWebViewCookieIntro";
+			path = "Target Support Files/Pods-WKWebViewCookieIntro";
+			sourceTree = "<group>";
+		};
+		EDBF4B525424C154F940FE1B58F5483A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BDC70946517C06C3775860D99916F396 /* FluctSDKResources.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		31F76CEACC428AF4177CBAC95A7F84E1 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E36723BB82540BFD22D24EF4B061F805 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3C6662BCBA5C5859278370FA61C11F3D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -380,19 +602,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		57C72295980201D241A1DD4E75334C77 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D97123781767484752A82889FFF82281 /* Pods-WKWebViewCookieIntro-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7DFCF5F12AEEED0500986DBC9BF76170 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A66ED57B365A35434C5BAF4B990819B7 /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3E3D099013BBDF636B58E91473A4BB3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C27920B19A957B4FB6285EF68A6A21D3 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF319C1D2D893E888D567A9A9C94F00 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89B27432F8B8899371DC7435CF0AC7EE /* FluctSDK-MediationAdapter-umbrella.h in Headers */,
+				CC17AFE6A275BC67FEC0EB7859DFED5E /* FSSRewardedVideoCustomEventAppLovin.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D38DE3F5F0E6C20E4A49DF72FE9C5D9A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D942EA95FD53E836E01A01F78FE55EB1 /* Pods-WKWebViewCookieIntro-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,7 +650,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				530B1DF181DF683875CFC13C3BA61EE3 /* PBXTargetDependency */,
+				5497CE61360FDE0326F75D981B42A6C5 /* PBXTargetDependency */,
 			);
 			name = "Pods-WKWebViewCookieIntroTests";
 			productName = "Pods-WKWebViewCookieIntroTests";
@@ -438,17 +677,20 @@
 		};
 		78555AF15A73A4152A9C3F5C2434B964 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6BFA59D8B4D30C833DBBF730A8659A47 /* Build configuration list for PBXNativeTarget "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests" */;
+			buildConfigurationList = E67E57F1E2C899066044E826B7FDFBDD /* Build configuration list for PBXNativeTarget "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests" */;
 			buildPhases = (
-				31F76CEACC428AF4177CBAC95A7F84E1 /* Headers */,
-				8A06F2DD23B0E3E9340F9A91E26FF2EA /* Sources */,
-				D2B78CFB9630745F108B38D59655834E /* Frameworks */,
-				2034F1D064EA46E774CE0439EC0E303F /* Resources */,
+				B3E3D099013BBDF636B58E91473A4BB3 /* Headers */,
+				BBD448FA72C7981A645CB5E6EAFC5B03 /* Sources */,
+				4E0E2A0DC2FFEA65C7B895F8F75D2145 /* Frameworks */,
+				CE57FF47F5E5E21C56DA3C2491C311CC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5B3275EFC01D23444028B24F65D08A66 /* PBXTargetDependency */,
+				8012E7A8FD89DB20C12B8FC0F27FCCB1 /* PBXTargetDependency */,
+				991A084719A4AF5B3996013D5EFE3668 /* PBXTargetDependency */,
+				E5C5A7733839CCFB9CD38B638D78F4EE /* PBXTargetDependency */,
+				C2E79090845BD5A916E8F9F60B8A74A8 /* PBXTargetDependency */,
 			);
 			name = "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests";
 			productName = "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests";
@@ -457,21 +699,44 @@
 		};
 		833C0AF0C2A62D034C91CA8DF9E04502 /* Pods-WKWebViewCookieIntro */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB39DFF936A268613F06D6A242FBD29B /* Build configuration list for PBXNativeTarget "Pods-WKWebViewCookieIntro" */;
+			buildConfigurationList = B3DCFE72D53DC3AF49658CDA965518BE /* Build configuration list for PBXNativeTarget "Pods-WKWebViewCookieIntro" */;
 			buildPhases = (
-				57C72295980201D241A1DD4E75334C77 /* Headers */,
-				850404A8F7E6E1A84615FC1C523624DD /* Sources */,
-				0D4528F0895CABC978F76810CFB5AA4C /* Frameworks */,
-				53A28130E497E1F944F2703662D04792 /* Resources */,
+				D38DE3F5F0E6C20E4A49DF72FE9C5D9A /* Headers */,
+				198DFEEDE5291CD9CAFB3E787A3C4067 /* Sources */,
+				D13C84A09D8686FD47D192A9D7444BC9 /* Frameworks */,
+				F13A01CFD3A3395B60FBE44238B52203 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1C0DE2F8DB60CC13039275BF5E7CF212 /* PBXTargetDependency */,
+				13D4CF0A807997517C1BB0570D8DBE64 /* PBXTargetDependency */,
+				14ECC753388EB63A859ABF2134A70369 /* PBXTargetDependency */,
+				61FB82FD4C9DAFEDF65E35C71D0D7173 /* PBXTargetDependency */,
+				77FB791406D84A7E5F9FC94F4D34745F /* PBXTargetDependency */,
 			);
 			name = "Pods-WKWebViewCookieIntro";
 			productName = "Pods-WKWebViewCookieIntro";
 			productReference = 1D9966479D197FA5FAA1BAFC81CC3A6C /* Pods_WKWebViewCookieIntro.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D4BBF26D52171D8FE63B2814A384F94D /* FluctSDK-MediationAdapter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE341FCCA68CBF474C9B6A657A470C31 /* Build configuration list for PBXNativeTarget "FluctSDK-MediationAdapter" */;
+			buildPhases = (
+				CBF319C1D2D893E888D567A9A9C94F00 /* Headers */,
+				4C8529B9E51C762864AE0F9C4BF56111 /* Sources */,
+				62EF53BA94F80BAFB681CE2C3F1A4190 /* Frameworks */,
+				6256E8238925979AE4525D636650981A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68446B65E775B7D55138593126C22416 /* PBXTargetDependency */,
+				3EB0B023BE431F93DC9EFD384231BC54 /* PBXTargetDependency */,
+			);
+			name = "FluctSDK-MediationAdapter";
+			productName = "FluctSDK-MediationAdapter";
+			productReference = 9E94B8AFD548FF53110DABBBF3DC2230 /* FluctSDK_MediationAdapter.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -492,10 +757,13 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 207823636E1B209B091A8A5DB73B3AB1 /* Products */;
+			productRefGroup = 50351DD3C54B15AF657E9E3796CCFA0D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				5BC46914A3617E8E5EA6E625B5DD1684 /* AppLovinSDK */,
+				34C23AC255336DCB625979B8B246FD76 /* FluctSDK */,
+				D4BBF26D52171D8FE63B2814A384F94D /* FluctSDK-MediationAdapter */,
 				833C0AF0C2A62D034C91CA8DF9E04502 /* Pods-WKWebViewCookieIntro */,
 				78555AF15A73A4152A9C3F5C2434B964 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests */,
 				09C3FD75E43283D8C79C6F8FBB166263 /* Pods-WKWebViewCookieIntroTests */,
@@ -505,13 +773,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2034F1D064EA46E774CE0439EC0E303F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		50BA84F98B48080475778373D0248D46 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -519,7 +780,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		53A28130E497E1F944F2703662D04792 /* Resources */ = {
+		6256E8238925979AE4525D636650981A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -533,22 +794,82 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE57FF47F5E5E21C56DA3C2491C311CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F13A01CFD3A3395B60FBE44238B52203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0767D10B049CB169F35806FA0DC22F33 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/AppLovinSDK/AppLovinSDK-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/AppLovinSDK/AppLovinSDK-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/AppLovinSDK/AppLovinSDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E333A780F605B3081F8C37E6856DEB77 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/FluctSDK/FluctSDK-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/FluctSDK/FluctSDK-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/FluctSDK/FluctSDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		198DFEEDE5291CD9CAFB3E787A3C4067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08B2ABFCAD058840830F821E6C947274 /* Pods-WKWebViewCookieIntro-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C8529B9E51C762864AE0F9C4BF56111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87C96236E9BB5D9215CB50BEC1CD1D85 /* FluctSDK-MediationAdapter-dummy.m in Sources */,
+				7E02FC3FAD15896A7A39F92F299412DC /* FSSRewardedVideoCustomEventAppLovin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4E3AF4C2249F70A49E3B6AA7E862AAD5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BBAD6889AF3B9C384E73897AE908A5FE /* Pods-WKWebViewCookieIntroTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		850404A8F7E6E1A84615FC1C523624DD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71B48A8D14A15447A4E86FC710DA6B45 /* Pods-WKWebViewCookieIntro-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,41 +917,123 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A06F2DD23B0E3E9340F9A91E26FF2EA /* Sources */ = {
+		BBD448FA72C7981A645CB5E6EAFC5B03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7273D23AF303DD8A3E8F134601A9E719 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-dummy.m in Sources */,
+				D69A8D316B83B088C46795ABD4DF4334 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1C0DE2F8DB60CC13039275BF5E7CF212 /* PBXTargetDependency */ = {
+		13D4CF0A807997517C1BB0570D8DBE64 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SnapKit;
-			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
-			targetProxy = E77880CA5B4E1F4E1677A572FBD44022 /* PBXContainerItemProxy */;
+			name = AppLovinSDK;
+			target = 5BC46914A3617E8E5EA6E625B5DD1684 /* AppLovinSDK */;
+			targetProxy = 46F66140D2BE4275D2528854E9CDA4C8 /* PBXContainerItemProxy */;
 		};
-		530B1DF181DF683875CFC13C3BA61EE3 /* PBXTargetDependency */ = {
+		14ECC753388EB63A859ABF2134A70369 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FluctSDK;
+			target = 34C23AC255336DCB625979B8B246FD76 /* FluctSDK */;
+			targetProxy = AB59AF47BB4AA81A12F3FBB17255C25B /* PBXContainerItemProxy */;
+		};
+		3EB0B023BE431F93DC9EFD384231BC54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FluctSDK;
+			target = 34C23AC255336DCB625979B8B246FD76 /* FluctSDK */;
+			targetProxy = 083E02894434E5605D9EB96597827462 /* PBXContainerItemProxy */;
+		};
+		5497CE61360FDE0326F75D981B42A6C5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-WKWebViewCookieIntro";
 			target = 833C0AF0C2A62D034C91CA8DF9E04502 /* Pods-WKWebViewCookieIntro */;
-			targetProxy = B01C9A27947C58CBEC080A6EF19934C1 /* PBXContainerItemProxy */;
+			targetProxy = A9F0807E8E486BB4031B8EE2347D6A91 /* PBXContainerItemProxy */;
 		};
-		5B3275EFC01D23444028B24F65D08A66 /* PBXTargetDependency */ = {
+		61FB82FD4C9DAFEDF65E35C71D0D7173 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FluctSDK-MediationAdapter";
+			target = D4BBF26D52171D8FE63B2814A384F94D /* FluctSDK-MediationAdapter */;
+			targetProxy = 91AB998D9D45A30548B29DC4A988B842 /* PBXContainerItemProxy */;
+		};
+		68446B65E775B7D55138593126C22416 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppLovinSDK;
+			target = 5BC46914A3617E8E5EA6E625B5DD1684 /* AppLovinSDK */;
+			targetProxy = 83AB82C3CBAC3B70CF5C363EDF4B4A9E /* PBXContainerItemProxy */;
+		};
+		77FB791406D84A7E5F9FC94F4D34745F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SnapKit;
 			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
-			targetProxy = DB7DF4EE0FD37DFEF839F4BA5DCC0EC0 /* PBXContainerItemProxy */;
+			targetProxy = 759844C0E7DA4D1ECA1D5C2CF90C57B8 /* PBXContainerItemProxy */;
+		};
+		8012E7A8FD89DB20C12B8FC0F27FCCB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppLovinSDK;
+			target = 5BC46914A3617E8E5EA6E625B5DD1684 /* AppLovinSDK */;
+			targetProxy = BD716D48F96FFBDE7ECE52DB5C4640C5 /* PBXContainerItemProxy */;
+		};
+		991A084719A4AF5B3996013D5EFE3668 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FluctSDK;
+			target = 34C23AC255336DCB625979B8B246FD76 /* FluctSDK */;
+			targetProxy = CB53FC7331BEB853E97AE1F173FA2993 /* PBXContainerItemProxy */;
+		};
+		C2E79090845BD5A916E8F9F60B8A74A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = FEAF6FC9095BE14D6685D05C5B562DB2 /* PBXContainerItemProxy */;
+		};
+		E5C5A7733839CCFB9CD38B638D78F4EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FluctSDK-MediationAdapter";
+			target = D4BBF26D52171D8FE63B2814A384F94D /* FluctSDK-MediationAdapter */;
+			targetProxy = BDCB633FE5747AECD9B6B3292BDBD90C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2A5D0211B9256A3D3A87F5E0B8913B20 /* Release */ = {
+		1269A86FDDE7C31D735DB27CDEC7F1E6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 30B68E36CFBE5BC585102CF39D9CD979 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests.release.xcconfig */;
+			baseConfigurationReference = 2BDE128F638EFB91EC673FCB39A8E1D2 /* FluctSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		133D3F0DD5EC7C1ACCCA6DE6474A7C77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0EB59FF054E412E3FED46AF2A3E79CD /* AppLovinSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B3266A71D022D6EE3A7C8C196D7332D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3113F5E2A4C4D2C40FCE30DC241F12CF /* Pods-WKWebViewCookieIntro.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -642,7 +1045,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests/Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-WKWebViewCookieIntro/Pods-WKWebViewCookieIntro-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -651,7 +1054,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests/Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-WKWebViewCookieIntro/Pods-WKWebViewCookieIntro.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -668,7 +1071,7 @@
 		};
 		2A808EA3B7606EBC470FE833FFBCDD33 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F448DDD36C9EE83B32921FADECD5627 /* Pods-WKWebViewCookieIntroTests.debug.xcconfig */;
+			baseConfigurationReference = A567515C10BB596F0B5D5AA7FB6BE3CF /* Pods-WKWebViewCookieIntroTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -703,9 +1106,191 @@
 			};
 			name = Debug;
 		};
-		70B05DB2A3DC0D8814B5F2FFA48D4DDD /* Debug */ = {
+		77B25FC9CEE66CA6521DBC2E6517BD97 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BC1A0BE5C60210EFD1046EAA817D823 /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests.debug.xcconfig */;
+			baseConfigurationReference = 7C33354F540D0BCF7F8FA5810C87351B /* SnapKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		88509180B602A760D3FAF3E0430660DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BBB0763ACB51FB3767AC063F54DF5D6 /* FluctSDK-MediationAdapter.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FluctSDK-MediationAdapter/FluctSDK-MediationAdapter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FluctSDK-MediationAdapter/FluctSDK-MediationAdapter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/FluctSDK-MediationAdapter/FluctSDK-MediationAdapter.modulemap";
+				PRODUCT_MODULE_NAME = FluctSDK_MediationAdapter;
+				PRODUCT_NAME = FluctSDK_MediationAdapter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8E403E361CD6D3F32A530333F7435318 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F892462A32E1EF01972B8B2CAF23975A /* SnapKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9F0A902BC9AB06F09815E34E6073196E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A011FA808FE250D3E19E8214BDF33B2F /* Pods-WKWebViewCookieIntro.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WKWebViewCookieIntro/Pods-WKWebViewCookieIntro-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WKWebViewCookieIntro/Pods-WKWebViewCookieIntro.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A11D8632AA98D16D10058316456F87D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 458C5E43D3FB26063B07E6A3CF721ABD /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests/Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests/Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B595E7051082359850EEFBC3EBC4BC87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C16041F8CB10F75F33A97D1246DD940C /* Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -739,152 +1324,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		77B25FC9CEE66CA6521DBC2E6517BD97 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C21E0C93A1141A1E2EB51575500E27D /* SnapKit.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
-				PRODUCT_MODULE_NAME = SnapKit;
-				PRODUCT_NAME = SnapKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8E403E361CD6D3F32A530333F7435318 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1CD432F32277BB93DEAADA626ECEC5B /* SnapKit.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
-				PRODUCT_MODULE_NAME = SnapKit;
-				PRODUCT_NAME = SnapKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		955FA8168E7494C340CB5C26066F868B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31E3066899AF3BAADF142C2B79F221B1 /* Pods-WKWebViewCookieIntro.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-WKWebViewCookieIntro/Pods-WKWebViewCookieIntro-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WKWebViewCookieIntro/Pods-WKWebViewCookieIntro.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A6D25FA755E18056EEFA8327E11D65BB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10487E99DF4277B010E3834455BAD216 /* Pods-WKWebViewCookieIntro.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-WKWebViewCookieIntro/Pods-WKWebViewCookieIntro-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WKWebViewCookieIntro/Pods-WKWebViewCookieIntro.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -952,6 +1391,57 @@
 			};
 			name = Debug;
 		};
+		BC0A7FC9000F74AF80305FC5902D1A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF1AE581101241FE821AF550A7018BA7 /* FluctSDK-MediationAdapter.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FluctSDK-MediationAdapter/FluctSDK-MediationAdapter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FluctSDK-MediationAdapter/FluctSDK-MediationAdapter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/FluctSDK-MediationAdapter/FluctSDK-MediationAdapter.modulemap";
+				PRODUCT_MODULE_NAME = FluctSDK_MediationAdapter;
+				PRODUCT_NAME = FluctSDK_MediationAdapter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C048DB951C41F1E0103C578E22A90608 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BC35872214070F5C9880A1D61832EA1 /* FluctSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1016,7 +1506,7 @@
 		};
 		E2066A4269E9105A30575807C2AEFB11 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D16405EE67486C1C82BA406A756DCB7F /* Pods-WKWebViewCookieIntroTests.release.xcconfig */;
+			baseConfigurationReference = ADC16E271257EC5A958E322A8AA1D4A1 /* Pods-WKWebViewCookieIntroTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1052,9 +1542,34 @@
 			};
 			name = Release;
 		};
+		FBB4305377262D0A38AA25406BD17EAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04890A749FE106E12B2F2069811C8F82 /* AppLovinSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1137672E97496FACD0DD9E48E86C50EF /* Build configuration list for PBXAggregateTarget "AppLovinSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBB4305377262D0A38AA25406BD17EAA /* Debug */,
+				133D3F0DD5EC7C1ACCCA6DE6474A7C77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3E625E544117F8F8966AFA9BCF558139 /* Build configuration list for PBXNativeTarget "Pods-WKWebViewCookieIntroTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1073,15 +1588,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6BFA59D8B4D30C833DBBF730A8659A47 /* Build configuration list for PBXNativeTarget "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				70B05DB2A3DC0D8814B5F2FFA48D4DDD /* Debug */,
-				2A5D0211B9256A3D3A87F5E0B8913B20 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		7F8CE4DC18DBEA01587212F09727DB3D /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1091,11 +1597,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB39DFF936A268613F06D6A242FBD29B /* Build configuration list for PBXNativeTarget "Pods-WKWebViewCookieIntro" */ = {
+		B3DCFE72D53DC3AF49658CDA965518BE /* Build configuration list for PBXNativeTarget "Pods-WKWebViewCookieIntro" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				955FA8168E7494C340CB5C26066F868B /* Debug */,
-				A6D25FA755E18056EEFA8327E11D65BB /* Release */,
+				9F0A902BC9AB06F09815E34E6073196E /* Debug */,
+				1B3266A71D022D6EE3A7C8C196D7332D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7FF9345FA2AE5C6263DB8CB2AD6FDA0 /* Build configuration list for PBXAggregateTarget "FluctSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C048DB951C41F1E0103C578E22A90608 /* Debug */,
+				1269A86FDDE7C31D735DB27CDEC7F1E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E67E57F1E2C899066044E826B7FDFBDD /* Build configuration list for PBXNativeTarget "Pods-WKWebViewCookieIntro-WKWebViewCookieIntroUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B595E7051082359850EEFBC3EBC4BC87 /* Debug */,
+				A11D8632AA98D16D10058316456F87D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE341FCCA68CBF474C9B6A657A470C31 /* Build configuration list for PBXNativeTarget "FluctSDK-MediationAdapter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0A7FC9000F74AF80305FC5902D1A75 /* Debug */,
+				88509180B602A760D3FAF3E0430660DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
